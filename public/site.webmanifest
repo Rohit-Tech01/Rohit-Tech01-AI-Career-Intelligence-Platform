@@ -1,0 +1,92 @@
+{
+  "name": "AI Career Mentor - Advanced Career Guidance",
+  "short_name": "AI Career",
+  "description": "Get personalized career recommendations, skill analysis, and learning paths powered by advanced AI technology.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f2937",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["education", "productivity", "business"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "AI Career Mentor on Desktop"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AI Career Mentor on Mobile"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Career Analysis",
+      "short_name": "Analysis",
+      "description": "Get personalized career analysis",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "/shortcut-analysis.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Skill Assessment",
+      "short_name": "Skills",
+      "description": "Assess your skills and get recommendations",
+      "url": "/assessment",
+      "icons": [
+        {
+          "src": "/shortcut-skills.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Resume Upload",
+      "short_name": "Resume",
+      "description": "Upload and analyze your resume",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "/shortcut-resume.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
