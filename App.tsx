@@ -145,8 +145,6 @@ function AppContent() {
     { id: 'dashboard', label: 'Analysis', icon: BarChart3 },
     { id: 'roadmap', label: 'Learning Path', icon: BookOpen },
     { id: 'resources', label: 'Resources', icon: Library },
-    { id: 'settings', label: 'Settings', icon: Settings },
-    { id: 'notifications', label: 'Notifications', icon: Bell },
   ];
 
   return (
@@ -156,8 +154,8 @@ function AppContent() {
       <div className="w-full px-3 sm:px-4 lg:px-6 py-4 sm:py-6 lg:py-8">
         {/* Tab Navigation - Hide on home page */}
         {activeTab !== 'home' && (
-          <div className={`mb-4 sm:mb-6 lg:mb-8 ${isDark ? 'bg-gray-800/50' : 'bg-white/50'} p-2 sm:p-2 lg:p-2 rounded-xl shadow-lg backdrop-blur-sm`}>
-            <div className="flex gap-1 sm:gap-2 overflow-x-auto pb-1 sm:pb-0 scrollbar-hide">
+          <div className={`mb-4 sm:mb-6 lg:mb-8 ${isDark ? 'bg-gray-800/50' : 'bg-white/50'} p-3 sm:p-4 lg:p-5 rounded-xl shadow-lg backdrop-blur-sm`}>
+            <div className="flex gap-2 sm:gap-3 lg:gap-4 overflow-x-auto pb-1 sm:pb-0 scrollbar-hide items-center justify-center sm:justify-start flex-wrap">
               {tabs.map((tab) => {
                 const Icon = tab.icon;
                 const isActive = activeTab === tab.id;
@@ -166,9 +164,9 @@ function AppContent() {
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`
-                      relative flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 lg:px-4 py-2 sm:py-2 lg:py-2 rounded-lg whitespace-nowrap text-xs sm:text-sm font-medium
+                      relative flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-5 lg:px-6 py-3 sm:py-3.5 lg:py-3.5 rounded-lg whitespace-nowrap text-sm sm:text-base font-medium
                       transition-all duration-300 ease-out
-                      group flex-shrink-0
+                      group flex-shrink-0 min-w-fit
                       ${isActive
                         ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md shadow-blue-500/20'
                         : isDark
@@ -185,10 +183,10 @@ function AppContent() {
                     )}
                     
                     {/* Icon with animation */}
-                    <Icon 
-                      size={14} 
+                    <Icon
+                      size={18}
                       className={`
-                        transition-transform duration-300
+                        flex-shrink-0 transition-transform duration-300
                         ${isActive ? 'scale-110' : 'group-hover:scale-110'}
                       `}
                     />
